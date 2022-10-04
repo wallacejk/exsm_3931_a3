@@ -1,0 +1,34 @@
+FUNCTION hungryCustomer
+customerMoney=""
+customerSnackCountDesired=""
+snackCost=""
+totalSnackCost=""
+
+
+
+FUNCTION hungryCustomer {
+    if (customerSnackCountDesired > 0) then
+        customerSnackCountDesired * snackCost = totalSnackCost
+        compare( if customerMoney >=  totalSnackCost then continue
+        Else return to customerSnackCountDesired 
+            if () 
+Hungry customer wants snack
+sees snack they like/dont like
+if like see cost
+compare cost to money available
+if money > cost then insert > cost into machine
+confirm code for snack desired then input code for desired snack
+retrieve snack
+retrieve change, if any
+repeat until desired amount of snacks are obtained
+}
+END FUNCTION
+
+FUNCTION machineOwner
+Owner unlock machine with key
+check # of snacks, if less than desired #, fill with snacks to desired # else continue
+check coin storage, if coinsPresent = true then empty coin tray else continue
+close and lock vending machine
+END FUNCTION
+
+
