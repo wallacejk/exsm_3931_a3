@@ -14,14 +14,15 @@ for each desired snacks {
     wait for dispense of desired snacks and change
     if change dispensed retrieve then retrieve snack
 }
+walk away
 
 
 FUNCTION machineOwner
 
 Owner unlock machine with key
-for each snack stock {
-    if snack stock < desired snack count then replace until
-    snack stock = desired snack stock
+for each snack stock item {
+    if snack stock item count < desired snack stock item count then fill until
+    snack stock item count = desired snack stock item count
 }
-if coins present = true then empty coin tray else continue
+if coins present = true then empty coin tray and top up change dispenser else continue
 close and lock vending machine
