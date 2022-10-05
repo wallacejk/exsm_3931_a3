@@ -8,10 +8,10 @@ if cost of desired snacks < money available then continue
     else change number of desired snacks -1 until money available >= desired snacks cost then continue
     else money available < desired snacks cost walk away
 
-for each snack {
-    Determine code for snack
+for each desired snacks {
+    Determine code for desired snacks
     input code
-    wait for dispense of desired snack and change
+    wait for dispense of desired snacks and change
     if change dispensed retrieve then retrieve snack
 }
 
