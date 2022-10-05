@@ -1,34 +1,27 @@
-FUNCTION hungryCustomer
-customerMoney=""
-customerSnackCountDesired=""
-snackCost=""
-totalSnackCost=""
+FUNCTION hungryCustomer 
 
+if machine has desired snack then determine number of snacks desired 
+    if desired snack count > 0 then continue
+    else walk away
 
+if cost of desired snacks < money available then continue
+    else change number of desired snacks -1 until money available >= desired snacks cost then continue
+    else money available < desired snacks cost walk away
 
-FUNCTION hungryCustomer {
-    if (customerSnackCountDesired > 0) then
-        customerSnackCountDesired * snackCost = totalSnackCost
-        compare( if customerMoney >=  totalSnackCost then continue
-        Else return to customerSnackCountDesired 
-            if () 
-Hungry customer wants snack
-sees snack they like/dont like
-if like see cost
-compare cost to money available
-if money > cost then insert > cost into machine
-confirm code for snack desired then input code for desired snack
-retrieve snack
-retrieve change, if any
-repeat until desired amount of snacks are obtained
+for each snack {
+    Determine code for snack
+    input code
+    wait for dispense of desired snack and change
+    if change dispensed retrieve then retrieve snack
 }
-END FUNCTION
+
 
 FUNCTION machineOwner
+
 Owner unlock machine with key
-check # of snacks, if less than desired #, fill with snacks to desired # else continue
-check coin storage, if coinsPresent = true then empty coin tray else continue
+for each snack stock {
+    if snack stock < desired snack count then replace until
+    snack stock = desired snack stock
+}
+if coins present = true then empty coin tray else continue
 close and lock vending machine
-END FUNCTION
-
-
